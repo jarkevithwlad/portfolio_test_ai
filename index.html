@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppDev Pro - VS Code Edition</title>
+    <link rel="stylesheet" href="css/styles-vscode.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- VS Code Background -->
+    <div id="vscode-bg"></div>
+
+    <!-- VS Code Window Decoration -->
+    <div class="vscode-title-bar">
+        <div class="title-bar-content">
+            <span class="file-icon">📱</span>
+            <span class="file-name">index.html — AppDev Pro</span>
+        </div>
+        <div class="window-controls">
+            <button class="control close" aria-label="Закрыть"></button>
+            <button class="control minimize" aria-label="Свернуть"></button>
+            <button class="control maximize" aria-label="Развернуть"></button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar vscode-nav">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-icon">📱</span>
+                <span class="logo-text">AppDev Pro</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">index.html</a></li>
+                <li><a href="#services">services.js</a></li>
+                <li><a href="#portfolio">portfolio.css</a></li>
+                <li><a href="#about">about.md</a></li>
+                <li><a href="#contact">contact-form.ts</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Line Numbers Decorator -->
+    <div class="line-numbers">
+        <div class="line-numbers-content">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            <span>11</span>
+            <span>12</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero vscode-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="code-comment">// Создаём мобильные приложения</div>
+                <div class="code-comment">// будущего с помощью современных технологий</div>
+                <h1 class="hero-title">
+                    <span class="keyword">const</span> <span class="variable">AppDev</span> = <span class="keyword">new</span> <span class="function-name">MobileAppStudio</span>();
+                </h1>
+                <div class="hero-title-sub">
+                    <span class="keyword">const</span> <span class="variable">future</span> = <span class="keyword">await</span> <span class="variable">AppDev</span>.<span class="function-name">create</span>();
+                </div>
+                <p class="hero-subtitle">
+                    <span class="string">"Превращаем идеи в успешные приложения для iOS и Android с 2018 года"</span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn vscode-btn">
+                        <span class="btn-icon">&lt;/&gt;</span>
+                        <span>Обсудить проект</span>
+                    </a>
+                    <a href="#portfolio" class="btn vscode-btn-secondary">
+                        <span class="btn-icon">📁</span>
+                        <span>Наши работы</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat vscode-stat">
+                        <span class="stat-number" data-count="150">0</span>
+                        <span class="stat-label">// проектов завершено</span>
+                    </div>
+                    <div class="stat vscode-stat">
+                        <span class="stat-number" data-count="45">0</span>
+                        <span class="stat-label">// довольных клиентов</span>
+                    </div>
+                    <div class="stat vscode-stat">
+                        <span class="stat-number" data-count="8">0</span>
+                        <span class="stat-label">// лет разработки</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual vscode-visual">
+                <div class="code-window">
+                    <div class="code-window-header">
+                        <span class="window-tab active">App.js</span>
+                        <span class="window-tab">styles.css</span>
+                        <span class="window-tab">utils.ts</span>
+                    </div>
+                    <div class="code-window-body">
+                        <pre><code><span class="keyword">class</span> <span class="class-name">MobileApp</span> {
+  <span class="keyword">constructor</span>(config) {
+    <span class="keyword">this</span>.platform = <span class="string">'iOS/Android'</span>;
+    <span class="keyword">this</span>.features = [<span class="string">'UI/UX'</span>, <span class="string">'Dev'</span>, <span class="string">'QA'</span>];
+  }
+
+  <span class="keyword">async</span> <span class="function-name">deploy</span>() {
+    <span class="keyword">await</span> <span class="keyword">this</span>.<span class="function-name">build</span>();
+    <span class="keyword">await</span> <span class="keyword">this</span>.<span class="function-name">test</span>();
+    <span class="keyword">return</span> <span class="string">'Success! 🚀'</span>;
+  }
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services vscode-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="keyword">class</span> <span class="class-name">Services</span> {
+                </h2>
+                <p class="section-subtitle">// Комплексные решения для вашего бизнеса</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card vscode-card">
+                    <div class="service-icon">🎨</div>
+                    <h3><span class="keyword">UI/UX</span> Design</h3>
+                    <p><span class="comment">// Создаём интуитивно понятные интерфейсы</span></p>
+                </div>
+                <div class="service-card vscode-card">
+                    <div class="service-icon">📱</div>
+                    <h3><span class="keyword">Native</span> Development</h3>
+                    <p><span class="comment">// iOS на Swift и Android на Kotlin</span></p>
+                </div>
+                <div class="service-card vscode-card">
+                    <div class="service-icon">⚡</div>
+                    <h3><span class="keyword">Cross-Platform</span></h3>
+                    <p><span class="comment">// React Native и Flutter</span></p>
+                </div>
+                <div class="service-card vscode-card">
+                    <div class="service-icon">☁️</div>
+                    <h3><span class="keyword">Backend</span> & API</h3>
+                    <p><span class="comment">// Масштабируемая инфраструктура</span></p>
+                </div>
+                <div class="service-card vscode-card">
+                    <div class="service-icon">🚀</div>
+                    <h3><span class="keyword">App</span> Store <span class="keyword">Optimization</span></h3>
+                    <p><span class="comment">// Продвижение в магазинах</span></p>
+                </div>
+                <div class="service-card vscode-card">
+                    <div class="service-icon">🔧</div>
+                    <h3><span class="keyword">Support</span> & Maintenance</h3>
+                    <p><span class="comment">// Техническая поддержка</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio vscode-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">📂 Portfolio</h2>
+                <p class="section-subtitle">// Примеры наших работ</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item vscode-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder">
+                            <span class="file-icon">🏥</span>
+                            <span>MedCare</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3><span class="file-name">MedCare App</span></h3>
+                        <p><span class="comment">// Запись к врачам, электронные карты</span></p>
+                        <div class="tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item vscode-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder">
+                            <span class="file-icon">🛒</span>
+                            <span>ShopGo</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3><span class="file-name">ShopGo E-commerce</span></h3>
+                        <p><span class="comment">// Онлайн магазин с доставкой</span></p>
+                        <div class="tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item vscode-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder">
+                            <span class="file-icon">💪</span>
+                            <span>FitTrack</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3><span class="file-name">FitTrack</span></h3>
+                        <p><span class="comment">// Отслеживание тренировок и питания</span></p>
+                        <div class="tags">
+                            <span class="tag">Swift</span>
+                            <span class="tag">HealthKit</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item vscode-item">
+                    <div class="portfolio-image">
+                        <div class="placeholder">
+                            <span class="file-icon">💰</span>
+                            <span>PayFlow</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3><span class="file-name">PayFlow Finance</span></h3>
+                        <p><span class="comment">// Управление финансами и инвестициями</span></p>
+                        <div class="tags">
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">Security</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about vscode-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">// About Us</h2>
+                    <p class="about-lead">
+                        <span class="keyword">const</span> <span class="variable">team</span> = [<span class="string">'Developers'</span>, <span class="string">'Designers'</span>, <span class="string">'QA'</span>];
+                    </p>
+                    <p>
+                        <span class="comment">// Мы — команда энтузиастов, которые верят в силу мобильных технологий</span>
+                    </p>
+                    <p>
+                        AppDev Pro — это профессиональная команда разработчиков, дизайнеров и 
+                        проектных менеджеров. Мы специализируемся на создании мобильных приложений, 
+                        которые помогают бизнесу расти.
+                    </p>
+                    <div class="about-list vscode-list">
+                        <div class="list-item">
+                            <span class="check">✓</span>
+                            <span>Современный стек технологий</span>
+                        </div>
+                        <div class="list-item">
+                            <span class="check">✓</span>
+                            <span>Agile методология разработки</span>
+                        </div>
+                        <div class="list-item">
+                            <span class="check">✓</span>
+                            <span>Регулярная коммуникация</span>
+                        </div>
+                        <div class="list-item">
+                            <span class="check">✓</span>
+                            <span>Гарантия качества</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn vscode-btn">
+                        <span class="btn-icon">&lt;/&gt;</span>
+                        <span>Связаться с нами</span>
+                    </a>
+                </div>
+                <div class="about-visual">
+                    <div class="stats-grid vscode-stats">
+                        <div class="big-stat vscode-big-stat">
+                            <pre><code><span class="keyword">const</span> projects = {
+  completed: <span class="number">150</span>,
+  success: <span class="number">98%</span>,
+  year: <span class="number">2024</span>
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process vscode-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">// Process</h2>
+                <p class="section-subtitle">// Прозрачный процесс разработки</p>
+            </div>
+            <div class="process-steps">
+                <div class="step vscode-step">
+                    <div class="step-number">1</div>
+                    <h3><span class="file-name">briefing.js</span></h3>
+                    <p><span class="comment">// Изучаем ваши требования</span></p>
+                </div>
+                <div class="step vscode-step">
+                    <div class="step-number">2</div>
+                    <h3><span class="file-name">design.md</span></h3>
+                    <p><span class="comment">// Создаём прототипы</span></p>
+                </div>
+                <div class="step vscode-step">
+                    <div class="step-number">3</div>
+                    <h3><span class="file-name">development.ts</span></h3>
+                    <p><span class="comment">// Пишем чистый код</span></p>
+                </div>
+                <div class="step vscode-step">
+                    <div class="step-number">4</div>
+                    <h3><span class="file-name">testing.js</span></h3>
+                    <p><span class="comment">// Проверяем всё</span></p>
+                </div>
+                <div class="step vscode-step">
+                    <div class="step-number">5</div>
+                    <h3><span class="file-name">deployment.yaml</span></h3>
+                    <p><span class="comment">// Запускаем в магазинах</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact vscode-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">📧 contact-form.ts</h2>
+                    <p class="contact-subtitle">
+                        <span class="comment">// Готовы обсудить вашу идею? Свяжитесь с нами</span>
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item vscode-item">
+                            <span class="contact-icon">📧</span>
+                            <span>hello@appdevpro.com</span>
+                        </div>
+                        <div class="contact-item vscode-item">
+                            <span class="contact-icon">📞</span>
+                            <span>+7 (999) 123-45-67</span>
+                        </div>
+                        <div class="contact-item vscode-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Москва, IT Парк</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form vscode-form" id="contactForm">
+                    <div class="form-group vscode-form-group">
+                        <label><span class="keyword">let</span> name: <span class="keyword">string</span></label>
+                        <input type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group vscode-form-group">
+                        <label><span class="keyword">let</span> email: <span class="keyword">string</span></label>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group vscode-form-group">
+                        <label><span class="keyword">let</span> subject: <span class="keyword">string</span></label>
+                        <input type="text" placeholder="Тема проекта">
+                    </div>
+                    <div class="form-group vscode-form-group">
+                        <label><span class="keyword">const</span> message: <span class="keyword">string</span></label>
+                        <textarea placeholder="Расскажите о вашем проекте..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn vscode-btn btn-full">
+                        <span class="btn-icon">&lt;/&gt;</span>
+                        <span>Отправить</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer vscode-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">📱</span>
+                    <span class="logo-text">AppDev Pro</span>
+                    <p><span class="comment">// Создаём цифровые решения для бизнеса</span></p>
+                </div>
+                <div class="footer-links">
+                    <h4>📁 Navigation</h4>
+                    <ul>
+                        <li><a href="#home">index.html</a></li>
+                        <li><a href="#services">services.js</a></li>
+                        <li><a href="#portfolio">portfolio.css</a></li>
+                        <li><a href="#contact">contact.ts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>🌐 Social</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Telegram</a>
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><span class="comment">// © 2024 AppDev Pro. Все права защищены.</span></p>
+                <p class="status-bar">
+                    <span>Ln <span class="number">150</span>, Col <span class="number">42</span></span>
+                    <span>UTF-8</span>
+                    <span>HTML</span>
+                    <span class="notification">✓ Ready</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/particles-vscode.js"></script>
+    <script src="js/animations-vscode.js"></script>
+    <script src="js/main-vscode.js"></script>
+</body>
+</html>
